@@ -1,3 +1,4 @@
+package 프로그래머스.입문;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

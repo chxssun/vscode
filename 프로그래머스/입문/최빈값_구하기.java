@@ -1,3 +1,4 @@
+package 프로그래머스.입문;
 public class 최빈값_구하기 {
     public static void main(String[] args) {
         int[] arr = {1,2,3,3,3,4};

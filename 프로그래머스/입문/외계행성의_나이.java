@@ -1,3 +1,4 @@
+package 프로그래머스.입문;
 public class 외계행성의_나이 {
     public static void main(String[] args) {
         System.out.println(solution_me(23));

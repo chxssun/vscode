@@ -1,3 +1,4 @@
+package 프로그래머스.입문;
 public class 문자열_뒤집기 {
     public static void main(String[] args) {
         System.out.println(solution_me("jaron"));

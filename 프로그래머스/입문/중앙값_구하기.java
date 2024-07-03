@@ -1,4 +1,4 @@
-
+package 프로그래머스.입문;
 import java.util.Arrays;
 public class 중앙값_구하기 {
     public static void main(String[] args) {

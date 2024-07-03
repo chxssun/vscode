@@ -1,5 +1,5 @@
+package 프로그래머스.입문;
 import java.util.Arrays;
-
 public class 짝수는_싫어요 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(solution_me(10)));

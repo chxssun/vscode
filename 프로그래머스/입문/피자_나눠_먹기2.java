@@ -1,3 +1,4 @@
+package 프로그래머스.입문;
 public class 피자_나눠_먹기2 {
     public static void main(String[] args) {
         System.out.println(solution_me(6));
