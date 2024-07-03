@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 이미지를 삽입할 수 있는 태그 : img태그 (홀태그)-->
+        <!-- 필수 속성 -->
+        <!-- 1) src : 이미지 파일의 경로를 작성 -->
+        <!-- 2) alt : 스크린리더로 읽을때 텍스트(이미지 설명) 
+                    이미지가 없는 경우 대체 텍스트로 사용-->
+
+        <!-- 이미지를 불러오는 2가지 방법 -->
+        <!-- 1) 내가 가진 로컬 파일을 불러오는 방법  -->
+        <!-- 2) 내트워크를 통해서 다른 서버에 저장된 이미지를 불어오는 방법 _CDN 
+                CDN 방식의 장점 : 메모리 차지를 하지 않음, 코드공유시 이미지를 별도로 보내주지 않아도 된다.
+                CDN 방식의 단점 : 원본자가 이미지를 삭제하면 사용불가, 인터넷이 안되면 사용불가 
+                
+                로컬방식 : 혼자 개발할때 주로 사용
+                CDN : 코드를 공개, 배포, 공유시 사용-->
+
+        <img src="짱구.jpeg" , alt="짱구 사진입니다" />
+        <img src="짱구.jpg" , alt="짱구 사진입니다" />
+        <!-- 이미지를 불러올때는 반드시 정확한 경로, 파일명, 확장자 인지 확인 -->
+
+        <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMDZfNiAg%2FMDAxNzAxODQxMTUwNjc2.D0vgAJZzxWW9a8CavTabuN_To_OvkzdIc907jkReDYUg.d9ySekAkg-zWY2WgRQSQU9VPBM9r_GzDZ50d9CH7hpgg.PNG.mtted974%2FKakaoTalk_20231206_142928798_07.png&type=a340", alt="엉덩이 썰매 짱구"
+        />
+
+        <!-- 파일을 불러오는 경로 2가지
+            1) 상대경로 : 내가 현재 작업중인 파일을 기준으로 데이터에 접근하여 불러오는 방식
+                - 경로/파일명.확장자
+                - 폴더를 들어갈때는 /기호를 사용한다
+                - 폴더에서 나올때는 ../기호를 사용한다
+                - 최상위폴더(root) 맨앞에 /시작하면 된다
+                - 나를 기준으로 같은 위치에 있는 팔일은 바로 파일명을 작성해주기만 하면 된다
+            2) 절대경로 : 누구나 똑같은 주소로 똑같은 결과가 나오는 경로 (url) -->
+        <img src="image/짱구2.jpeg" , alt="부장 짱구2" />
+    </body>
+</html>
+
+

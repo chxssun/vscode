@@ -1,0 +1,48 @@
+SQL> SHOW USER
+USER is "HR"
+SQL> SHOW SYSTEM / 12345;
+SP2-0158: unknown SHOW option "SYSTEM"
+SP2-0158: unknown SHOW option "/"
+SP2-0158: unknown SHOW option "12345"
+SQL> conn system /12345;
+Connected.
+SQL> show user;
+USER is "SYSTEM"
+SQL> create user dcltest identified by 12345;
+
+User created.
+
+SQL> GRANT CREATE SESSION TO DCLTEST;
+
+Grant succeeded.
+
+SQL> REVOKE CREATE SESSION FROM DCLTEST;
+
+Revoke succeeded.
+
+SQL> GRANT CREATE SESSION TO DCLTEST;
+
+Grant succeeded.
+
+SQL> SHOW USER
+USER is "SYSTEM"
+SQL> GRANT CONNECT , RESOURCE TO DCLTEST;
+
+Grant succeeded.
+
+SQL> SHOW USER
+USER is "SYSTEM"
+SQL> GRANT SELECT ON HR.EMPLOYEES TO DCLTEST;
+
+Grant succeeded.
+
+SQL> GRANT UPDATE ON HR.EMPLOYEES TO DCLTEST;
+
+Grant succeeded.
+
+SQL> GRANT DELETE ON HR.EMPLOYEES TO DCLTEST;
+
+Grant succeeded.
+
+SQL>
+

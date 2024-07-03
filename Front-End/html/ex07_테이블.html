@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 표, 테이블을 생성하기 위한 태그 : table(표의 틀을 만들어줌) 
+            행, 열, 데이터(내용), 테두리, 제목(컬럼)-->
+
+        <!-- 테이블을 구성하는 필수요소 -->
+        <!-- 1) 행을 만들어주는 tr태그(table row) -> 여러개 행 tr*숫자 -->
+        <table border="1px solid black">
+            <!-- 테두리 : 선의 두꼐, 종류, 색 -->
+            <tr bgcolor="yellow">
+                <th>이름</th>
+                <th>성별</th>
+                <th>주소</th>
+            </tr>
+            <tr>
+                <td>박병관</td>
+                <td>남자</td>
+                <td>서울</td>
+            </tr>
+            <tr>
+                <td>최영화</td>
+                <td>여자</td>
+                <td>광주</td>
+            </tr>
+            <tr>
+                <td align="center">모란</td>
+                <td>여자</td>
+                <td>광주</td>
+            </tr>
+        </table>
+        <br />
+        <table border="1px solid black">
+            <!-- 테두리 : 선의 두꼐, 종류, 색 -->
+            <tr bgcolor="yellow">
+                <th>이름</th>
+                <th colspan="2">성별, 주소</th>
+                <th>직업</th>
+            </tr>
+            <tr>
+                <td>박병관</td>
+                <td>남자</td>
+                <td>서울</td>
+                <td rowspan="2">선생님</td>
+            </tr>
+            <tr>
+                <td>최영화</td>
+                <td>여자</td>
+                <td>광주</td>
+            </tr>
+            <tr>
+                <td align="center">모란</td>
+                <td>여자</td>
+                <td>광주</td>
+                <td align="center">학생</td>
+            </tr>
+        </table>
+        <br>
+        <table border="1px solid black">
+            <tr bgcolor="#EAECF0">
+                <th rowspan="2">연도</th>
+                <th colspan="2">순위</th>
+                <th rowspan="2">경기</th>
+            </tr>
+            <tr bgcolor="#EAECF0", align="center">
+                <th>종합</th>
+                <th>정규</th>
+            </tr>
+            <tr align="center">
+                <td>1982</td>
+                <td><b>4</b></td>
+                <td>4</td>
+                <td>80</td>
+            </tr>
+            <tr align="center", bgcolor="#ffd700">
+                <td>1983</td>
+                <td><b>1</b></td>
+                <td>2<br>(전기리그 1위)</td>
+                <td>100</td>
+            </tr>
+            <tr align="center">
+                <td>1984</td>
+                <td><b>5</b></td>
+                <td>5</td>
+                <td>100</td>
+            </tr>
+            <tr align="center">
+                <td>1985</td>
+                <td><b>3</b></td>
+                <td>3</td>
+                <td>110</td>
+            </tr>
+            
+        </table>
+    </body>
+</html>

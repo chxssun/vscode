@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="text">
+        <button onclick="printInput()">인풋값 h1으로 출력</button>
+        <p id="text-area"></p>
+
+        <script>
+            // 일반적인 사고
+            // 버튼을 클릭했을 때 input 태그의 안의 값을 p태그에 생성(h1태그로)
+            let text = document.getElementById("text");
+            let textArea = document.getElementById("text-area");
+            const printInput = () => {
+                textArea.innerHTML = `<h1>${text.value}</h1>`;
+            }
+        </script>
+    </body>
+</html>
