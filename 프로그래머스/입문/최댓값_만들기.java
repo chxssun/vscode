@@ -1,8 +1,10 @@
 package 프로그래머스.입문;
 
+import java.util.Arrays;
+
 public class 최댓값_만들기 {
     public static void main(String[] args) {
-        System.out.println(solution_me(new int[]{12,2,1}));
+        System.out.println(solution_me(new int[]{2,2,1}));
     }
     public static int solution_me(int[] numbers){
         // 1. 최댓값 변수
@@ -14,7 +16,7 @@ public class 최댓값_만들기 {
         boolean isNum = false;
         // 5. 최댓값의 인덱스 변수
         int index = 0;
-        for(int i = 1; i < numbers.length; i++) {
+        for(int i = 0; i < numbers.length; i++) {
             if(max < numbers[i]) {
                 max = numbers[i];
                 index = i;
@@ -39,5 +41,12 @@ public class 최댓값_만들기 {
             }
         }
         return max*max2;
+    }
+    public static int solution(int[] numbers) {
+        int answer = 0;
+
+        Arrays.sort(numbers);
+
+        return numbers[numbers.length-1]*numbers[numbers.length-2];
     }
 }
